@@ -24,8 +24,6 @@
 mod cdc;
 mod cdc_generated;
 
-pub(crate) use cdc::ContentDefinedChunker;
-
 /// A chunk of data with level and value offsets for record-shredded nested data.
 #[derive(Debug, Clone, Copy)]
 pub(crate) struct CdcChunk {

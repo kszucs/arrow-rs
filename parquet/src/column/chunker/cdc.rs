@@ -127,7 +127,7 @@ impl ContentDefinedChunker {
         Ok(Self {
             max_def_level: desc.max_def_level(),
             max_rep_level: desc.max_rep_level(),
-            repeated_ancestor_def_level: desc.repeated_ancestor_def_level(),
+            repeated_ancestor_def_level: 0,
             min_chunk_size: options.min_chunk_size as i64,
             max_chunk_size: options.max_chunk_size as i64,
             rolling_hash_mask,
